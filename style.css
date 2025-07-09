@@ -1,0 +1,32 @@
+h1{
+    font-size: 2em;
+    color: blue;
+    text-align: center;
+}
+
+h2{
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    color:green;
+    text-align:center;
+}
+
+p{
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma;
+}
+
+body{
+    background-color:aquamarine;
+    font-family: Arial, sans-serif;
+    
+}
+
+img{
+    border-radius: 0em;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
