@@ -1,50 +1,114 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title></title>
+        <title>STRATEGE HOLDING'S</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="sty.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
-         <h1>Formulaire </h1>
-        <form action="#" method="POST">
-            <label for="name">Nom:</label>
-            <input type="text" id="name" name="Nom" required>
-            <br> <br>
+        <!-- début du formulaire avec deux fieldset-->
 
-            <label for="prénom">Prénom:</label>
-            <input type="text" id="prénom" name="Prénom" required>
-            <br> <br>
+        <h1> POSTULER </h1>
+
+       <form>
+
+
+        <!-- Le formulaire est divisé en deux sections avec fieldset -->
+
+        <fieldset>
+            <legend> <span class="number">1</span> Information personnelles : </legend>
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="Nom" placeholder="Entrez votre nom" required>
+            <br>
+            
+            <label for="prénom">prénom :</label>
+            <input type="text" id="prénom" name="prénom" placeholder="Entrez votre prénom" required>
+            <br>
 
             <label for="email">Email:</label>
-            <input type="text" id="email" name="Email" required>
-            <br> <br>
+            <input type="email" id="email" name="email" placeholder="Entrez votre email" reuired>
+            <br>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="Message" rows="4" cols="50" required></textarea>
-            <br> <br>
+            <label for="phone">Téléphone :</label>
+            <input type="tel" id="phone" name="Téléphone" placeholder="Entrez votre numéro de Téléphone" required>
+            <br>
+
+            <label for="motdepasse">Mot de passe : </label>
+            <input type="password" id="motdepasse" name="mot de passe" placeholder="Entrez votre mot de passe" required>
+            <br>
+
+            <label for="confirm-motdepasse">confirmer votre mot de passe:</label>
+            <input type="password" id="confirm-motdepasse" name="confirmer mot de passe" placeholder="confirme-mot depasse" required>
+            <br>
+
+            <label for="sexe">SEXE:</label>
+            <select id="sexe" name="sexe" required>
+                <option value="Homme">Homme</option>
+                <option value="Femme">Femme</option>
+            </select>
+            <br>
+
+            <label for="cv">CV :</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
+
+            <br>
+
+            <!-- fin du premier fieldset -->
 
 
-            <button type="submit" value="Envoyer">Envoyer</button>
+        </fieldset>
 
-            état du projet: <progress value="95" max="100"></progress>
-         <div>
-            <p>Ce formulaire est un projet de test pour apprendre à créer des formulaires en HTML.</p>
-            <p>Il est encore en cours de développement et sera mis à jour régulièrement.</p>
-            <p>Merci de votre compréhension.</p>
-         </div>
 
-         
+        <!-- début du deuxième fieldset -->
+
+        <fieldset>
+            <legend> <span class="number"> 2 </span> profil: </legend>
+
+            <label for="biographie">biographie :</label>
+            <textarea id="biographie" name="biographie" rows="4" cols="50" placeholder="parlez de vous" required></textarea>
+            <br>
+
+            <label for="job">spécialité :</label>
+            <br>
             
+            <!-- Le select contient des options regroupées par optgroup -->
 
-              
+            <select id="job" name="profession" required>
+                <optgroup label="Front">
+                    <option value="développeur front-end">développeur front-end</option>
+                    <option value="intégrateur web">intégrateur web</option>
+                    <option value="designer UI/UX">designer UI/UX</option>
+                </optgroup>
 
+                <optgroup label="back">
+                    <option value="développeur back-end">développeur back-end</option>
+                    <option value="administrateur de base de données">administrateur de base de données</option>
+                    <option value="architecte logiciel">architecte logiciel</option>
+                </optgroup>
 
+                <optgroup label="fullstack">
+                    <option value="développeur fullstack web">développeur fullstack web</option>
+                    <option value="ingénieur DevOps">ingénieur DevOps</option>
+                    <option value="développeur fullstack mobile ">développeur fullstack mobile</option>
+                    </optgroup>
+            </select>
 
+            <!-- fin du select avec optgroup -->
+        </fieldset>
 
+        <button type="submit">POSTULER</button>
+        <br>
 
-        </form>
-    
+        <p>En cliquant sur "POSTULER", vous acceptez nos <a href="#">conditions d'utilisation</a> et notre <a href="#">politique de confidentialité</a>.</p>
+       
+        <br>
+
+        <p>Si vous avez des questions, veuillez nous contacter à +241 062-36-46-06 </p>
+            <br>
+
+        <button type="reset">Réinitialiser</button>
+       
+    </form>
     </body>
 </html>
